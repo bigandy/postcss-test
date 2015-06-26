@@ -1,3 +1,5 @@
+
+
 h1 {
 	font-size: 2rem;
 }
@@ -52,15 +54,10 @@ h3 {
 }
 
 
-// Lists
-%list--plain {
-	margin: 0;
-	list-style: none;
-}
-
+/*// Lists*/
 
 .list--inline {
-	@extend %list--plain;
+	@mixin list--plain;
 
 	li {
 		float: left;
@@ -74,7 +71,7 @@ pre {
 }
 
 
-// Links
+/*// Links*/
 a,
 .current {
 	border-bottom: 3px solid transparent;
@@ -86,8 +83,7 @@ a {
 	border-bottom: 3px solid transparent;
 	margin-bottom: -3px;
 
-	&:hover,
-	&:focus {
+	&:hover {
 		border-bottom-color: $primary-color;
 	}
 }
@@ -121,7 +117,7 @@ article {
 	}
 }
 
-// vcard styles
+/*// vcard styles*/
 .vcard {
 	border: 0;
 	padding: 0;
@@ -149,7 +145,7 @@ article {
 	}
 }
 
-// Picture Styles
+/*// Picture Styles*/
 picture,
 picture > img {
 	width: 100%;
@@ -170,7 +166,7 @@ picture > img {
 }
 
 .links {
-	@extend %cf;
+	@mixin cf;
 	padding: rows(1);
 }
 

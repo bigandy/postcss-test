@@ -3,7 +3,7 @@
 	display: inline-block;
 	fill: $orange;
 
-	@include hocus {
+	&:hover {
 		fill: $blue;
 	}
 }

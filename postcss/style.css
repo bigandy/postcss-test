@@ -8,8 +8,8 @@
 * Version: 4.0
 */
 
-/*@import "_variables.css";*/
-/*@import "../bower_components/normalize.css/normalize.css";*/
+
+@import "../bower_components/normalize.css/normalize.css";
 
 /* Or selectively include components*/
 /*@import "foundation/components/grid";*/

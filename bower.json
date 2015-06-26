@@ -1,0 +1,20 @@
+{
+  "name": "postcss-test",
+  "version": "0.0.0",
+  "homepage": "https://github.com/bigandy/postcss-test",
+  "authors": [
+    "Andrew Hudson <ahudson@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.2",
+    "normalize.css": "~3.0.3"
+  }
+}
