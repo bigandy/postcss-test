@@ -18,7 +18,8 @@ var gulp = require('gulp'),
 	postcssRoot = require('postcss'),
 	cssnext = require('gulp-cssnext'),
 	simpleExtend = require('postcss-simple-extend'),
-	focus = require('postcss-focus');
+	focus = require('postcss-focus'),
+	colorFunction = require('postcss-color-function');
 
 
 gulp.task('postcss', function () {
@@ -32,6 +33,7 @@ gulp.task('postcss', function () {
 		nestedcss,
 		vars({ variables: colours }),
 		focus,
+		colorFunction,
 
 
 		// cssnext({
