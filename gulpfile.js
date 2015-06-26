@@ -34,16 +34,19 @@ gulp.task('postcss', function () {
 		vars({ variables: colours }),
 		focus,
 		colorFunction,
-
-
-		// cssnext({
-		// 	browsers: ('last 1 version'),
-		// 	compress: true,
-		// 	sourcemap: true
-		// })
 	];
 	return gulp.src(['./postcss/style.css', './postcss/font.css'])
 		.pipe(postcss(processors))
+
+		// .pipe(cssnext({
+			// compress: true
+		// }))
+		.pipe(cssnext({
+			browsers: ('last 1 version'),
+			compress: true,
+			sourcemap: true,
+			safe: true
+		}))
 		.pipe(gulp.dest('./build'));
 });
 

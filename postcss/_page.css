@@ -29,7 +29,7 @@ h3 {
 }
 
 [data-visited] {
-	background-color: rgba($yellow, .15);
+	background-color: color($yellow a(15%));
 	position: relative;
 	margin-top: 0;
 	margin-bottom: 0;

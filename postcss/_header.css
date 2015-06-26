@@ -2,32 +2,49 @@
 	margin-bottom: 1rem;
 	background-color: color($black a(10%));
 	background-image: $header-bg;
+}
 
-	&__row {
-		padding: 1.5rem 0 .5rem;
-	}
+.header__menu {
+	display: inline-block;
 
-	&__title {
-		text-align: center;
+	a {
+		display: inline-block;
 		margin-bottom: 1rem;
 	}
 
-	&__nav {
-		text-align: center;
+	li {
+		padding-right: 20px;
 	}
-
-	&__menu {
-		display: inline-block;
-
-		li {
-			padding-right: 20px;
-		}
-
-		a {
-			display: inline-block;
-			margin-bottom: 1rem;
-		}
-	}
-
 }
 
+.header__title {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.header__nav {
+	text-align: center;
+}
+
+.header__row {
+	padding: 1.5rem 0 0.5rem;
+}
+
+/*@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+:--heading {
+	background-color: orange;
+	position: relative;
+
+	&:after {
+		background-color: #FFF;
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 10px;
+		width: 10px;
+		-webkit-border-radius: 30%;
+		border-radius: 50%;
+	}
+}*/
