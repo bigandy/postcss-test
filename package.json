@@ -1,0 +1,42 @@
+{
+  "name": "postcss-test",
+  "version": "1.0.0",
+  "description": "testing postcss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigandy/postcss-test"
+  },
+  "dependencies": {
+    "bluebird": "^2.3.0",
+    "critical": "^0.1.6",
+    "gulp-concat": "~2.1.7",
+    "gulp-jshint": "~1.4.2",
+    "gulp-uglify": "~0.2.1",
+    "gulp-util": "~2.2.20",
+    "penthouse": "^0.2.5"
+  },
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "css-mqpacker": "^3.1.0",
+    "csswring": "^3.0.5",
+    "gulp": "^3.9.0",
+    "gulp-cssnext": "^1.0.1",
+    "gulp-livereload": "~1.1.1",
+    "gulp-minify-css": "~0.3.0",
+    "gulp-phpcs": "^0.2.1",
+    "gulp-postcss": "^5.1.9",
+    "gulp-sass": "^2.0.0",
+    "gulp-scss-lint": "^0.1.4",
+    "gulp-strip-debug": "~0.1.1",
+    "gulp-uncss": "^0.4.5",
+    "jshint-stylish": "~0.1.5",
+    "postcss": "^4.1.13",
+    "postcss-import": "^6.0.0",
+    "postcss-mixins": "^0.3.0",
+    "postcss-nested": "^0.3.2",
+    "postcss-simple-vars": "^0.3.0"
+  },
+  "author": "Andrew JD Hudson",
+  "twitter": "@bigandy",
+  "license": "ISC"
+}
