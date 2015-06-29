@@ -27,8 +27,10 @@
 }
 
 /*@define-mixin rows $rows {
-	$rows * 16px;
-}*/
+	@return $rows * 16 + 'px';
+}
+*/
+
 
 @define-mixin ir {
 	background-color: transparent;

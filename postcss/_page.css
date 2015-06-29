@@ -153,8 +153,8 @@ picture > img {
 }
 
 .wp-pagenavi {
-	padding-top: rows(1);
-	padding-bottom: rows(3);
+	padding-top: 1rows;
+	padding-bottom: 3rows;
 	text-align: center;
 
 	a,
@@ -167,6 +167,5 @@ picture > img {
 
 .links {
 	@mixin cf;
-	padding: rows(1);
+	padding: 1rows;
 }
-

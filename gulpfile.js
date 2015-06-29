@@ -19,32 +19,36 @@ var gulp = require('gulp'),
 	cssnext = require('gulp-cssnext'),
 	simpleExtend = require('postcss-simple-extend'),
 	focus = require('postcss-focus'),
-	colorFunction = require('postcss-color-function');
+	colorFunction = require('postcss-color-function'),
+	rows = require('postcss-rows');
 
 
 gulp.task('postcss', function () {
 	var processors = [
 		autoprefixer({browsers: ['last 1 version']}),
 		postcssImport,
-		mixins,
-		mqpacker,
-		csswring,
+		mixins(),
+		// mqpacker,
+		// csswring,
 		simpleExtend,
 		nestedcss,
 		vars({ variables: colours }),
 		focus,
 		colorFunction,
+		rows({
+			multiplier: 16,
+			unit: 'rows'
+		})
 	];
-	return gulp.src(['./postcss/style.css', './postcss/font.css'])
+	return gulp.src([
+			'./postcss/style.css',
+			'./postcss/font.css'
+		])
 		.pipe(postcss(processors))
-
-		// .pipe(cssnext({
-			// compress: true
-		// }))
 		.pipe(cssnext({
 			browsers: ('last 1 version'),
 			compress: true,
-			sourcemap: true,
+			sourcemap: false,
 			safe: true
 		}))
 		.pipe(gulp.dest('./build'));

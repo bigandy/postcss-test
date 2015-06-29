@@ -1,9 +1,5 @@
 @import "../bower_components/normalize.css/normalize.css";
 
-/* Or selectively include components*/
-/*@import "foundation/components/grid";*/
-/*@import "foundation/components/type";*/
-
 /* Theme Specific*/
 @import "_mixins.css";
 @import "_grid.css";
@@ -16,27 +12,27 @@
 
 /* Media Queries */
 
-/* 30 * 16 = 480px and up*/
+
 @media all and (min-width: 30em) {
 	@import "media-queries/_30em.css";
 }
 
-/* 37.5 * 16 = 600 and up*/
+
 @media all and (min-width: 37.5em) {
 	@import "media-queries/_37-5em.css";
 }
 
-/* 64 * 16 = 1024 and up*/
+
 @media all and (min-width: 64em) {
 	@import "media-queries/_64em.css";
 }
 
-/* 74 * 16 = 1184 and up*/
+
 @media all and (min-width: 74em) {
 	@import "media-queries/_74em.css";
 }
 
-/* 74 * 16 = 1184 and up*/
+
 @media print {
 	@import "media-queries/_print.css";
 }
