@@ -22,7 +22,6 @@ var gulp = require('gulp'),
 	colorFunction = require('postcss-color-function'),
 	rows = require('postcss-rows');
 
-
 gulp.task('postcss', function () {
 	var processors = [
 		autoprefixer({browsers: ['last 1 version']}),

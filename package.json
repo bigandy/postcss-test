@@ -38,6 +38,7 @@
     "postcss-import": "^6.0.0",
     "postcss-mixins": "^0.3.0",
     "postcss-nested": "^0.3.2",
+    "postcss-rows": "0.0.1",
     "postcss-simple-vars": "^0.3.0"
   },
   "author": "Andrew JD Hudson",
