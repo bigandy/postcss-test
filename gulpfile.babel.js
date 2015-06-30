@@ -1,13 +1,10 @@
 /* global require */
 var gulp = require('gulp'),
-	gutil = require('gulp-util'),
 	sass = require('gulp-sass'),
 	livereload = require('gulp-livereload'),
 
 	postcss = require('gulp-postcss'),
 	autoprefixer = require('autoprefixer-core'),
-	mqpacker = require('css-mqpacker'),
-	csswring = require('csswring'),
 	mixins = require('postcss-mixins'),
 	nestedcss = require('postcss-nested'),
 	postcssImport = require('postcss-import'),
@@ -22,13 +19,11 @@ var gulp = require('gulp'),
 	colorFunction = require('postcss-color-function'),
 	rows = require('postcss-rows');
 
-gulp.task('postcss', function () {
+gulp.task('postcss', () => {
 	var processors = [
 		autoprefixer({browsers: ['last 1 version']}),
 		postcssImport,
 		mixins(),
-		// mqpacker,
-		// csswring,
 		simpleExtend,
 		nestedcss,
 		vars({ variables: colours }),
@@ -54,14 +49,14 @@ gulp.task('postcss', function () {
 });
 
 // Rerun the task when a file changes
-gulp.task('watch', function () {
+gulp.task('watch', () => {
 	gulp.watch('postcss/**/*', ['postcss']);
 
 	var server = livereload();
 	gulp.watch([
 		'style.css',
-		'postcss/**'
-	]).on('change', function(file) {
+		// 'postcss/**'
+	]).on('change', (file) => {
 		server.changed(file.path);
 	});
 });
